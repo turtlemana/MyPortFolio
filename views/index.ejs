@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <script src="/js/jquery.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="app.css">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css' rel='stylesheet' />
+
+
+    <title>Who is Minho</title>
+</head>
+
+<body>
+    <script>
+        const mapToken = '<%-process.env.MAPBOX_TOKEN%>';
+    </script>
+    <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top border-bottom">
+        <span class="navbar-brand">PortFolio of Me</span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navLinks" aria-controls="navLinks" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center " id="navLinks">
+            <ul class="navbar-nav">
+                <li class="nav-item px-5">
+                    <a href="#Home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item px-5">
+                    <a href="#About" class="nav-link">About</a>
+                </li>
+                <li class="nav-item px-5">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="container-fluid px-0">
+        <a name="Home"></a>
+        <div class="row align-items-center">
+            <div class="col-lg-7">
+                <div id="headingGroup" class="text-black d-lg-block mt-5 ml-5">
+                    <h1 class="text-center mr-5"></h1>
+                    <br>
+                    <br>
+                    <h1 class="main">Master Degree Student</h1>
+                    <br>
+                    <h1 class="main">Majoring Fintech</h1>
+                    <br>
+                    <h1 class="main">Scalper & Swing-Trader</h1>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <button class="btn btn-primary btn-lg" onclick="location.href='mailto:turtlemana124@gmail.com'">Hire Me</button>
+                </div>
+            </div>
+            <div class="col-lg-5 mt-5 d-none d-lg-block ">
+                <img class="figure-img" src="imgs/IMG_0018_02.jpg" alt="myFace">
+            </div>
+        </div>
+    </section>
+    <br>
+
+    <section class="container-fluid px-2">
+        <div class="row content mb-5">
+            <div class="col-md-11 order-2 order-md-1 blurb" id="intro">
+                <div class="col-12 col-lg-12 blurb mb-5 mb-md-0 mt-3 ml-5 mb-5">
+                <h2 id="introH2">Hi</h2>
+                <br>
+                        <p class="lead" id="introText">I'm Minho, a master degree student of SKKU, majoring Financial Technology.
+                            <br>
+                            I'm interested in BlockChain, Finance, Programming, Investing, and Piano.
+                            <br>
+                            Welcome to my website, if you want to know me more, please scroll down.
+                        </p>
+                </div>
+            </div>
+            
+        </div>
+        <br>
+        <div class="row align-items-center content pb-5 pt-5 mt-5 mr-5 mb-5">
+            <a name="About"></a>
+            <div class="col-md-8 text-center">
+                <div class="row justify-content-center">
+                    <div class="col-md-8 col-lg-8 blurb mb-5 mb-md-0">
+                        <h2>History</h2>
+                        <div class="dropdown-divider"></div>
+                        <br>
+                        <p class="lead history">2013.02 Grad. Kyunggi High-school</p>
+                        <p class="lead history">2013.03 Bachelor. SungKyunKwan University, <sub>Confucianism Major</sub></p>
+                        <p class="lead history">2018.05 Internship. KOTRA, start-up support team</p>
+                        <p class="lead history">2019.02 Exchange student. Groningen University</p>
+                        <p class="lead history">2020.12 Top 2%. Kiwoom-Investing Competition</p>
+                        <p class="lead history">2021.03 Master. SungKyunKwan University, <sub>Fintech Major</sub>
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4  d-none d-lg-block row align-items-center content justify-content-center ">
+                <img src="imgs/kyunggi.png" alt="Kyunggi Highschool" class="img-fluid" title="Kyunggi High-school" style="left: 0; height: 0; width: 275px; height: 77px;">
+                <br>
+                <br>
+                <br>
+                <img src="imgs/skku.PNG" alt="" class="img-fluid" title="SungKyunKwan University" style="left: 0; height: 0; width: 275px; height: 77px;">
+                <br>
+                <br>
+                <br>
+                <img src="imgs/kotra.PNG" alt="" class="img-fluid" title="Kotra" style="left: 0; height: 0; width: 275px; height: 77px;">
+                <br>
+                <br>
+                <br>
+                <img src="imgs/rug.PNG" alt="" class="img-fluid" title="University of Groningen" style="left: 0; height: 0; width: 275px; height: 77px;">
+            </div>
+
+        </div>
+        <div class="row align-items-center content justify-content-center ml-5 mt-5 pb-5 pt-5">
+            <div class="col-md-6 order-2 order-md-1 ml-0 d-none d-lg-block">
+                <img src="imgs/certificate_image.PNG" alt="" class="img-fluid ml-5 pl-5 pb-5 pt-5 mt-5 mb-5" title="Assistant Financial Planner" >
+               
+            </div>
+            <div class="col-md-6 text-center order-1 order-md-2">
+                <div class="row justify-content-center">
+                    <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+                        <h2>Certificates</h2>
+                        <div class="dropdown-divider"></div>
+                        <br>
+                        <p class="lead certificate">Certified Assistant Financial Planner</p>
+                        <p class="lead certificate">Certified Credit Analyst</p>
+                        <p class="lead certificate">DELE(examen de calificación en español)-B1</p>
+                        <p class="lead certificate">Opic-English Advanced Low</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid px-5 mb-5 pb-5 pt-5">
+        <a name="contact"></a>
+        <div class="row align-items-center justify-content-center">
+            <div class="col-lg-7">
+                <div id="contact" class="text-black d-lg-block ml-5">
+                    <h1 class="" id="contactHeader">Contact</h1>
+                    <div class="dropdown-divider"></div>
+                    <br>
+                    <br>
+                    <p class="lead">My Phone and Email are both available. 
+                        <br>
+                        If you would like to discuss about investing or offer me a job request,
+                        <br> 
+                        please don't hesitate to contact me</p>
+                        <br>
+                        <br>
+                    <div class="row">
+                    <i class="fas fa-phone-alt"><span class="phonemail"> <a href="tel:+821040218492">+82-1040218492</a></span></i>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="row">
+                    <i class="fas fa-envelope"><span class="phonemail"> <a href="mailto:turtlemana124@gmail.com"> turtlemana124@gmail.com</a></span></i>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="row">
+                        <span class="location">Location</span>
+                        <div id='map' style='width: 400px; height: 300px;'></div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-lg-5 mt-5 d-none d-lg-block ">
+                <form action="/" method="post" novalidate class="validated-form">
+                    <div class="mb-3">
+                        <label for="exampleName" class="form-label">Your Name</label>
+                        <input type="text" class="form-control" id="exampleName" aria-describedby="emailHelp"
+                                placeholder="E.g Minho Seo" name="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="E.g minhoseo@myemail.com" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleNumber" class="form-label">Phone Number</label>
+                        <input type="number" class="form-control" id="exampleNumber" placeholder="E.g 821040218492" name="number" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="floatingTextarea2">Enquiry</label>
+                        <textarea class="form-control" placeholder="Leave your enquiry here" id="floatingTextarea2" style="height: 100px" name="enquiry" required></textarea>
+                            <br>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Get In Touch</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        (function () {
+                'use strict'
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                const forms = document.querySelectorAll('.validated-form')
+                // Loop over them and prevent submission
+                Array.from(forms)
+                    .forEach(function (form) {
+                        form.addEventListener('submit', function (event) {
+                            if (!form.checkValidity()) {
+                                event.preventDefault()
+                                event.stopPropagation()
+                            }
+                            form.classList.add('was-validated')
+                        }, false)
+                    })
+            })()
+    </script>
+
+    <script src="index.js"></script>
+    <script src="/javascripts/showPageMap.js"></script>
+</body>
+
+</html>
