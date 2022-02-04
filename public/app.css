@@ -23,6 +23,10 @@ button {
   color: white;
 }
 
+#contactintro {
+  font-size: 1.2rem;
+}
+
 #headingGroup .main {
   line-height: 1.5;
 }
@@ -80,6 +84,7 @@ i {
 }
 
 .location {
+  padding-left: 50px;
   font-size: 1.5rem;
   color: #007bff;
   font-weight: bold;
@@ -118,12 +123,64 @@ i {
   font-size: 4rem;
 }
 
+#enquiry {
+  font-weight: bold;
+}
+
 @media (max-width: 1200px) {
   #headingGroup h1 {
     font-weight: 100;
-    font-size: 3rem;
+    font-size: 2rem;
   }
+  .phonemail {
+    font-size: 1.2rem;
+  }
+
+  .location {
+    font-size: 1.2rem;
+  }
+  #brand {
+    size: 1rem;
+  }
+  #tog {
+    width: 80px;
+  }
+
+  #togicon {
+    font-size: 1rem;
+  }
+
+  .blurb .history {
+    font-size: 1rem;
+    margin-left: 100px;
+  }
+
+  .blurb .certificate {
+    font-size: 1.2rem;
+  }
+
+  #introText {
+    font-size: 1.2rem;
+    margin-left: 0;
+  }
+
   .blurb h2 {
     font-size: 2rem;
+  }
+  #certificateimg {
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  #enquiry {
+    margin-top: 100px;
+  }
+
+  #historyHeading {
+    margin-left: 100px;
+  }
+
+  #historyDivider {
+    margin-left: 100px;
   }
 }

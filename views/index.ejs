@@ -25,13 +25,13 @@
     <script>
         const mapToken = '<%-process.env.MAPBOX_TOKEN%>';
     </script>
-    <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top border-bottom">
-        <span class="navbar-brand">PortFolio of Me</span>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navLinks" aria-controls="navLinks" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+    <nav id="mainNavbar" class="navbar navbar-light bg-light navbar-expand-lg py-0 fixed-top border-bottom">
+        <span class="navbar-brand" id="brand">PortFolio of Me</span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks" aria-controls="navLinks" aria-expanded="false" aria-label="Toggle navigation" id="tog">
+            <span class="navbar-toggler-icon" id="togicon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-center " id="navLinks">
-            <ul class="navbar-nav">
+        <div class="collapse navbar-collapse align-items-center" id="navLinks">
+            <ul class="navbar-nav me-auto my-2 my-lg-0">
                 <li class="nav-item px-5">
                     <a href="#Home" class="nav-link">Home</a>
                 </li>
@@ -94,8 +94,8 @@
             <div class="col-md-8 text-center">
                 <div class="row justify-content-center">
                     <div class="col-md-8 col-lg-8 blurb mb-5 mb-md-0">
-                        <h2>History</h2>
-                        <div class="dropdown-divider"></div>
+                        <h2 id="historyHeading">History</h2>
+                        <div class="dropdown-divider" id="historyDivider"></div>
                         <br>
                         <p class="lead history">2013.02 Grad. Kyunggi High-school</p>
                         <p class="lead history">2013.03 Bachelor. SungKyunKwan University, <sub>Confucianism Major</sub></p>
@@ -108,8 +108,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4  d-none d-lg-block row align-items-center content justify-content-center ">
-                <img src="imgs/kyunggi.png" alt="Kyunggi Highschool" class="img-fluid" title="Kyunggi High-school" style="left: 0; height: 0; width: 275px; height: 77px;">
+            <div class="col-md-4 row align-items-center content justify-content-center ">
+                <img src="imgs/kyunggi.PNG" alt="Kyunggi Highschool" class="img-fluid" title="Kyunggi High-school" style="left: 0; height: 0; width: 275px; height: 77px;">
                 <br>
                 <br>
                 <br>
@@ -126,8 +126,8 @@
 
         </div>
         <div class="row align-items-center content justify-content-center ml-5 mt-5 pb-5 pt-5">
-            <div class="col-md-6 order-2 order-md-1 ml-0 d-none d-lg-block">
-                <img src="imgs/certificate_image.PNG" alt="" class="img-fluid ml-5 pl-5 pb-5 pt-5 mt-5 mb-5" title="Assistant Financial Planner" >
+            <div class="col-md-6 order-2 order-md-1 ml-0">
+                <img src="imgs/certificate_image.PNG" alt="" class="img-fluid pb-5 pt-5 mt-5 mb-5" title="Assistant Financial Planner" id="certificateimg" >
                
             </div>
             <div class="col-md-6 text-center order-1 order-md-2">
@@ -155,7 +155,7 @@
                     <div class="dropdown-divider"></div>
                     <br>
                     <br>
-                    <p class="lead">My Phone and Email are both available. 
+                    <p class="lead" id="contactintro">My Phone and Email are both available. 
                         <br>
                         If you would like to discuss about investing or offer me a job request,
                         <br> 
@@ -173,13 +173,16 @@
                     <br>
                     <br>
                     <div class="row">
-                        <span class="location">Location</span>
+                        <i class="fas fa-map-marker-alt"><span class="location">Location</span></i>
                         <div id='map' style='width: 400px; height: 300px;'></div>
                     </div>
                     
                 </div>
             </div>
-            <div class="col-lg-5 mt-5 d-none d-lg-block ">
+            <div class="col-lg-5 mt-5">
+                <h1 class="" id="enquiry">Enquiry</h1>
+                <div class="dropdown-divider"></div>
+                <br>
                 <form action="/" method="post" novalidate class="validated-form">
                     <div class="mb-3">
                         <label for="exampleName" class="form-label">Your Name</label>
