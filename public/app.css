@@ -183,4 +183,14 @@ i {
   #historyDivider {
     margin-left: 100px;
   }
+
+  .historyClass {
+    margin-left: 0;
+  }
+  .certificateClass {
+    margin-left: 0;
+  }
+  .contactClass {
+    margin-left: 0;
+  }
 }
